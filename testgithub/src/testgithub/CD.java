@@ -5,7 +5,7 @@ package testgithub;
 public class CD {
     
     String title;
-   private double price;
+    double price;
    
    
    public void setTitle(String title){

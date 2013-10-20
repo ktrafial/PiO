@@ -10,4 +10,20 @@ package testgithub;
  */
 public class AudioCD extends CD {
     
+    String artist;
+    
+    public void setArtist(String artist){
+       this.artist=artist;
+   }
+    
+    @Override
+    public String toString(){
+        String nl =System.getProperty("line.separator");
+        return this.getClass().getSimpleName()+nl
+                +"Title: "+this.title+nl
+                +"Price: "+this.price+nl
+                +"Artysta: "+this.artist;
+               
+    }
+    
 }
