@@ -13,6 +13,10 @@ package testgithub;
 public class MovieCD extends AudioCD {
     String genre;
     
+    
+        public MovieCD(){
+            this.genre="Akcja";
+        }
     public void setGenre(String genre){
        this.genre=genre;
    }

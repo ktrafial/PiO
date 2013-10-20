@@ -7,6 +7,10 @@ public class CD {
     String title;
     double price;
    
+    public CD(){
+        this.title="300";
+        this.price=59;
+}
    
    public void setTitle(String title){
        this.title=title;

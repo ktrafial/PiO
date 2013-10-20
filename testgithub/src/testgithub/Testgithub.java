@@ -8,11 +8,11 @@ public class Testgithub {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       MovieCD plyta = new MovieCD();
+      CD plyta = new CD();
        
-        plyta.setArtist("Marek");
         
-        plyta.setGenre("Komedia");
+        
+      
         
         plyta.setTitle("Abrakadabra");
        // System.out.println(plyta.getTitle());

@@ -12,6 +12,10 @@ public class AudioCD extends CD {
     
     String artist;
     
+    public AudioCD(){
+        this.artist="Karol";
+    }
+    
     public void setArtist(String artist){
        this.artist=artist;
    }
