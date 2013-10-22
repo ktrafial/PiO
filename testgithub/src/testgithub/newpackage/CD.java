@@ -4,18 +4,20 @@ package testgithub;
 
 public class CD {
     
-    String title;
-    double price;
+    private String title;
+    protected double price;
     
     protected String nl =System.getProperty("line.separator"); // pakietowy dostęp
-   
+    
     public CD(){
-        this.title="300";
-        this.price=59;
-}
+        
+    }
    
-   public void setTitle(String title){
+   
+   
+   public final CD setTitle(String title){
        this.title=title;
+       return this;
    }
    
   public String getTitle(){
@@ -28,8 +30,9 @@ public class CD {
     }
 
     
-    public void setPrice(double price) {
+    public CD setPrice(double price) {
         this.price = price;
+        return this;
     }
     
     @Override

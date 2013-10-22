@@ -12,6 +12,16 @@ public class GameCD extends CD{
     
     String nazwa;
     
+    public GameCD(){
+            
+       }
+    
+    public GameCD(String nazwa, String title, double price){
+        this.nazwa=nazwa;
+        setTitle(title);
+        this.price=price;
+    }
+    
     public void setNazwa(String nazwa){
         this.nazwa=nazwa;
     }
@@ -24,8 +34,7 @@ public class GameCD extends CD{
     public String toString(){
         
         return this.getClass().getSimpleName()+nl
-                 +"Title: "+this.title+nl
-                +"Price: "+this.price+nl
+                 +super.toString()+nl
                 +"Genre: "+this.nazwa;
     
    

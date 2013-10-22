@@ -8,20 +8,10 @@ public class Testgithub {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     AudioCD plyta = new AudioCD();
-       
+     AudioCD plyta = new AudioCD("Marek", "W pięty", 99);
+       AudioCD o4 = new AudioCD();
+       o4.setTitle("chain").setPrice(18);
         
-        
-      
-        
-        plyta.setTitle("Abrakadabra");
-       // System.out.println(plyta.getTitle());
-        
-        plyta.setPrice(150);
-       // System.out.println(plyta.getPrice());
-        
-       // System.out.println(plyta);
-        
-        System.out.println(plyta.toString());
+        System.out.println(o4.toString());
     }
 }

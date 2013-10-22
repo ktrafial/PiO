@@ -14,9 +14,14 @@ public class MovieCD extends CD {
     String genre;
     
     
-        public MovieCD(){
-            this.genre="Akcja";
-        }
+    public MovieCD(){
+        
+    }
+        public MovieCD(String genre, String title, double price){
+        this.genre=genre;
+         setTitle(title);
+        this.price=price;
+    }
     public void setGenre(String genre){
        this.genre=genre;
    }
@@ -29,8 +34,7 @@ public class MovieCD extends CD {
     public String toString(){
        
         return this.getClass().getSimpleName()+nl
-                 +"Title: "+this.title+nl
-                +"Price: "+this.price+nl
+                 +super.toString()+nl
                 +"Genre: "+this.genre;
                
     }
