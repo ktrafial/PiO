@@ -4,7 +4,7 @@ package testgithub;
 
 public class CD {
     
-    private String title;
+    protected String title;
     protected double price;
     
     protected String nl =System.getProperty("line.separator"); // pakietowy dostęp
@@ -15,9 +15,14 @@ public class CD {
    
    
    
-   public final CD setTitle(String title){
+   public final void setTitle(String title){
+       if(!title.equals("")){
        this.title=title;
-       return this;
+       }else{
+           throw new IllegalArgumentException("Tytuł nie może być pusty");
+       }
+       
+       
    }
    
   public String getTitle(){
@@ -30,9 +35,9 @@ public class CD {
     }
 
     
-    public CD setPrice(double price) {
+    public void setPrice(double price) {
         this.price = price;
-        return this;
+        
     }
     
     @Override

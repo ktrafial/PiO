@@ -9,9 +9,11 @@ public class Testgithub {
      */
     public static void main(String[] args) {
      AudioCD plyta = new AudioCD("Marek", "W pięty", 99);
-       AudioCD o4 = new AudioCD();
-       o4.setTitle("chain").setPrice(18);
+       plyta.setTitle("bbb");
+       
+       
+       
         
-        System.out.println(o4.toString());
+        System.out.println(plyta.toString());
     }
 }
