@@ -10,7 +10,7 @@ package testgithub;
  *
  * @author Kacper
  */
-public class MovieCD extends AudioCD {
+public class MovieCD extends CD {
     String genre;
     
     
@@ -27,7 +27,6 @@ public class MovieCD extends AudioCD {
         return this.getClass().getSimpleName()+nl
                  +"Title: "+this.title+nl
                 +"Price: "+this.price+nl
-                +"Artysta: "+this.artist+nl
                 +"Genre: "+this.genre;
                
     }

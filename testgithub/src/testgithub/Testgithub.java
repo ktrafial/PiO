@@ -8,7 +8,7 @@ public class Testgithub {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      CD plyta = new CD();
+      MovieCD plyta = new MovieCD();
        
         
         
