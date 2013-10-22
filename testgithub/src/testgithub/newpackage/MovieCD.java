@@ -21,9 +21,13 @@ public class MovieCD extends CD {
        this.genre=genre;
    }
     
+    public String getGenre(){
+        return this.genre;
+    }
+    
     @Override
     public String toString(){
-        String nl =System.getProperty("line.separator");
+       
         return this.getClass().getSimpleName()+nl
                  +"Title: "+this.title+nl
                 +"Price: "+this.price+nl

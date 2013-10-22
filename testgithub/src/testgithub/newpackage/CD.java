@@ -6,6 +6,8 @@ public class CD {
     
     String title;
     double price;
+    
+    protected String nl =System.getProperty("line.separator"); // pakietowy dostęp
    
     public CD(){
         this.title="300";
@@ -32,7 +34,7 @@ public class CD {
     
     @Override
     public String toString(){
-        String nl =System.getProperty("line.separator");
+        
         return this.getClass().getSimpleName()+nl
                 +"Title: "+this.title+nl
                 +"Price: "+this.price;

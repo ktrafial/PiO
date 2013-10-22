@@ -20,14 +20,17 @@ public class AudioCD extends CD {
        this.artist=artist;
    }
     
+    public String getArtist(){
+        return this.artist;
+    }
+    
+    
+               
     @Override
     public String toString(){
-        String nl =System.getProperty("line.separator");
-        return this.getClass().getSimpleName()+nl
-                +"Title: "+this.title+nl
-                +"Price: "+this.price+nl
-                +"Artysta: "+this.artist;
-               
+        
+        return  super.toString()+nl
+                +"Artist "+this.artist;
     }
     
 }
